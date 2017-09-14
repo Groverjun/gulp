@@ -53,7 +53,7 @@ gulp.task('rev',function(){
 
 
 // 图片压缩优化
-gulp.task('imagemin', function() {
+gulp.task('imgmin', function() {
     return gulp.src('app/img/**/*.{png,jpg,gif,ico,svg}')
         .pipe(cache(imagemin({
             optimizationLevel: 5, //类型：Number  默认：3  取值范围：0-7（优化等级）
